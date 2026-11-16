@@ -1,10 +1,10 @@
 /* Generic tetrahedral chirality illustration; not a molecular simulation. */
 const TAU = Math.PI * 2;
 const LIGANDS = [
-  { label: 'A', position: [1, 1, 1], color: '#207d77', light: '#94d0c1' },
-  { label: 'B', position: [1, -1, -1], color: '#b98634', light: '#efd09a' },
-  { label: 'D', position: [-1, 1, -1], color: '#527b9b', light: '#b6d1df' },
-  { label: 'H', position: [-1, -1, 1], color: '#a3a598', light: '#f2f1e7' },
+  { label: '1', position: [1, 1, 1], color: '#207d77', light: '#94d0c1' },
+  { label: '2', position: [1, -1, -1], color: '#b98634', light: '#efd09a' },
+  { label: '3', position: [-1, 1, -1], color: '#527b9b', light: '#b6d1df' },
+  { label: '4', position: [-1, -1, 1], color: '#a3a598', light: '#f2f1e7' },
 ];
 
 export function initMolecules(canvas, { onRotationChange } = {}) {
@@ -73,7 +73,7 @@ export function initMolecules(canvas, { onRotationChange } = {}) {
     ctx.font = `600 ${Math.max(10, r * 0.82)}px ui-sans-serif, system-ui, sans-serif`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillStyle = atom.label === 'H' ? '#263f38' : '#fffdf5';
+    ctx.fillStyle = atom.label === '4' ? '#263f38' : '#fffdf5';
     ctx.fillText(atom.label, atom.x, atom.y + 0.5);
     ctx.restore();
   }
