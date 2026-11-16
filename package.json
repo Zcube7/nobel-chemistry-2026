@@ -1,0 +1,8 @@
+{
+  "name": "nobel-chemistry-2026",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "2026 诺贝尔化学奖：手性、非线性效应与不对称自催化的交互式科普",
+  "scripts": { "test": "node --test", "start": "python -m http.server 4173 --directory dist --bind 127.0.0.1" }
+}

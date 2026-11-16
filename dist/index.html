@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ee">
+  <meta name="description" content="用镜像分子、非线性曲线和自催化实验，读懂 2026 年诺贝尔化学奖：亨利·卡根与硖合宪三如何揭示手性优势的放大。">
+  <title>一点不对称 — 2026 诺贝尔化学奖</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="一点不对称，回到首页"><span class="brand-symbol" aria-hidden="true">✳</span><span>一点不对称<small>THE CHIRALITY STORY</small></span></a>
+    <nav aria-label="页面导航"><a href="#mirror">分子的左右手</a><a href="#amplification">优势如何放大</a><a href="#autocatalysis">自催化实验</a></nav>
+    <a class="repo-link" href="https://github.com/Zcube7/nobel-chemistry-2026" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="gold-dot"></span> 2026 NOBEL PRIZE <span class="eyebrow-divider">/</span> CHEMISTRY</p>
+        <h1 id="hero-title">世界的偏爱，<br>始于一点<span class="accent">不对称</span>。</h1>
+        <p class="hero-intro">分子，也有“左右手”。<br>一个微小的偏向，如何成为压倒性的优势？</p>
+        <p class="hero-description">跟随亨利·卡根与硖合宪三的发现，<br class="desktop-break">看见不对称有机合成中的非线性效应与自催化。</p>
+        <a class="primary-link" href="#amplification">亲手放大一点优势 <span aria-hidden="true">↗</span></a>
+        <div class="hero-meta"><span>一个奖项 · 三个互动实验</span><span>约 5 分钟探索</span></div>
+      </div>
+      <div class="molecule-panel" id="mirror">
+        <div class="panel-top"><span class="eyebrow">01 / MIRROR MOLECULES</span><button class="icon-button" id="motion-toggle" type="button" aria-label="暂停分子旋转" aria-pressed="false">Ⅱ <span>暂停旋转</span></button></div>
+        <canvas id="molecule-canvas" tabindex="0" role="img" aria-label="一对互为镜像的四面体手性分子。拖动或使用方向键旋转；两种镜像含有相同的四种不同配体，但镜像不能通过旋转完全重合。"></canvas>
+        <div class="molecule-labels"><span><i class="dot teal"></i> 镜像 A</span><span class="mirror-label">MIRROR PLANE</span><span><i class="dot amber"></i> 镜像 B</span></div>
+        <div class="panel-bottom"><span>拖动分子，换个角度看世界</span><button id="reset-view" class="text-button" type="button">重置视角 ↺</button></div>
+        <p class="canvas-caption">同样的连接方式，无法重合的镜像。示意结构，不代表具体药物。</p>
+      </div>
+    </section>
+    <section class="laureates wrap" aria-label="两位获奖者">
+      <div class="laureate-intro"><span class="eyebrow">THE LAUREATES</span><p>两条发现之路，<br>一个不对称的世界。</p></div>
+      <article class="laureate"><span class="person-initial" aria-hidden="true">HK<span>↗</span></span><div><p class="person-name">亨利·卡根 <span>Henri B. Kagan</span></p><p>非线性效应 <span class="mini-divider">/</span> 小偏向，也能被放大</p></div></article>
+      <article class="laureate"><span class="person-initial amber-initial" aria-hidden="true">KS<span>↻</span></span><div><p class="person-name">硖合宪三 <span>Kenso Soai</span></p><p>不对称自催化 <span class="mini-divider">/</span> 产物，参与自身生成</p></div></article>
+    </section>
+    <section class="chirality-section wrap section" aria-labelledby="chirality-title">
+      <div class="section-heading"><span class="section-number">01</span><div><p class="eyebrow">A WORLD WITH TWO HANDS</p><h2 id="chirality-title">像左右手一样相似，<br>也一样不同。</h2></div></div>
+      <div class="chirality-copy"><p>把左手放在镜子前，你会看见一只“右手”。无论怎样旋转左手，都不能让它与右手完全重合。某些分子也具有这样的性质，叫做<strong>手性</strong>；互为镜像的一对，叫做<strong>对映体</strong>。</p><p>生命里的许多分子本身就有手性。两种对映体遇到它们时，可能产生不同作用。因此，化学家关心的不只是“做出这个分子”，还有“做出哪一种镜像”。</p><div class="definition"><span>衡量偏向</span><p><strong>ee = |A − B| / (A + B) × 100%</strong><small>对映体过量（ee）：50∶50 是 0% ee；90∶10 是 80% ee。</small></p></div></div>
+    </section>
+    <section id="amplification" class="experiment-section section" aria-labelledby="amp-title">
+      <div class="wrap">
+        <div class="section-heading"><span class="section-number">02</span><div><p class="eyebrow">KAGAN / NONLINEAR EFFECTS</p><h2 id="amp-title">一点优势，可以不止一点。</h2><p class="section-intro">在具有正非线性效应的体系中，产物的手性偏向可以超出简单的线性预期。</p></div></div>
+        <div class="experiment-grid">
+          <div class="chart-panel"><div class="chart-header"><span>催化体系 → 产物</span><div class="legend"><span><i class="line-key"></i> 放大曲线</span><span><i class="line-key dashed"></i> 线性参照</span></div></div><svg id="amp-chart" viewBox="0 0 600 380" role="img" aria-labelledby="amp-chart-title amp-chart-desc"><title id="amp-chart-title">催化体系与产物 ee 的关系</title><desc id="amp-chart-desc">实线展示教学模型中的正非线性放大，虚线为输入和输出相等的线性参照。调整右侧滑块可移动观测点。</desc><g id="chart-grid"></g><path id="linear-line" class="reference-line" d="M65 325 L565 30"></path><path id="amplification-area" class="chart-area"></path><path id="amplification-path" class="chart-curve"></path><path id="chart-guides" class="guide-line"></path><circle id="chart-point" r="7" class="chart-point"></circle><text x="315" y="372" text-anchor="middle" class="axis-title">催化体系 ee（%）</text><text x="17" y="178" text-anchor="middle" transform="rotate(-90 17 178)" class="axis-title">产物 ee（%）</text></svg><p class="model-note">教学示意曲线 · 非实验数据。真实反应也可能表现出负非线性效应。</p></div>
+          <div class="controls-panel"><p class="experiment-label"><span class="live-dot"></span> 试着改变初始偏向</p><div class="slider-label"><label for="initial-ee">催化体系 ee</label><output id="initial-ee-value" for="initial-ee">10<span>%</span></output></div><input id="initial-ee" type="range" min="0" max="100" step="1" value="10"><div class="range-endpoints"><span>50∶50 / 完全平衡</span><span>100∶0 / 单一镜像</span></div><div class="slider-label second-control"><label for="amplification-strength">示意放大强度</label><output id="strength-value" for="amplification-strength"><span>a = </span>3.0</output></div><input id="amplification-strength" type="range" min="1" max="5" step="0.1" value="3"><div class="range-endpoints"><span>1 / 线性参照</span><span>5 / 更强放大</span></div><div class="result-box" aria-live="polite"><span>模型中的产物 ee</span><strong id="product-ee">29.2<small>%</small></strong><p id="product-ratio">镜像 A 64.6% · 镜像 B 35.4%</p><div class="ratio-bar"><span id="product-ratio-fill"></span></div></div><p class="insight" id="amp-insight">输入的 10% ee，在此模型中对应 29.2% 的产物 ee。</p></div>
+        </div>
+        <details class="model-details"><summary>这条曲线是怎么画出来的？</summary><p>设输入中镜像 A 的比例 p = (1 + ee / 100) / 2，模型输出比例 q = pᵃ / [pᵃ + (1 − p)ᵃ]，输出 ee = (2q − 1) × 100%。a 是滑块设定的示意参数；它不代表实测催化效率或通用反应常数。a = 1 时线性，a &gt; 1 时展示正非线性放大。</p></details>
+      </div>
+    </section>
+    <section id="autocatalysis" class="section wrap auto-section" aria-labelledby="auto-title">
+      <div class="section-heading"><span class="section-number">03</span><div><p class="eyebrow">SOAI / ASYMMETRIC AUTOCATALYSIS</p><h2 id="auto-title">当产物，也成为催化剂。</h2><p class="section-intro">产物促进更多同类产物生成。在适当机制下，微小偏向可以逐步扩大。</p></div></div>
+      <div class="auto-grid"><div class="reaction-panel"><div class="chart-header"><span>一个简化的反应容器</span><span class="round-label">步骤 <strong id="round-number">00</strong> / 20</span></div><div class="vessel" id="vessel" role="img" aria-label="初始反应容器，包含底物和两种镜像产物"></div><div class="vessel-key"><span><i class="dot teal"></i> 镜像 A</span><span><i class="dot amber"></i> 镜像 B</span><span><i class="dot substrate"></i> 剩余底物</span></div><div class="reaction-flow"><span>底物</span><span class="flow-arrow">→<small>产物参与催化</small></span><span>更多产物</span></div><p class="model-note">每点约代表 2 份物质，显示数量经取整；不代表真实分子轨迹。</p></div><div class="auto-controls"><p class="experiment-label">从一个微小的不平衡开始</p><div class="slider-label"><label for="seed-ee">初始产物 ee</label><output id="seed-ee-value" for="seed-ee">2<span>%</span></output></div><input id="seed-ee" type="range" min="-20" max="20" step="1" value="2"><div class="range-endpoints"><span>偏向 B</span><span>平衡</span><span>偏向 A</span></div><p class="seed-hint" id="seed-ratio">起始：镜像 A 51% / 镜像 B 49%</p><div class="simulation-buttons"><button id="run-reaction" class="primary-button" type="button">开始反应 <span aria-hidden="true">→</span></button><button id="step-reaction" class="secondary-button" type="button">前进一步</button><button id="reset-reaction" class="text-button" type="button">重置 ↺</button></div><div class="auto-metrics" aria-live="polite"><div><span>当前产物 ee</span><strong id="current-ee">2.0<small>%</small></strong></div><div><span>剩余底物</span><strong id="remaining-substrate">200<small>份</small></strong></div></div><div class="ratio-bar large"><span id="auto-ratio-fill"></span></div><div class="composition" id="auto-composition">镜像 A 51.0%<span>镜像 B 49.0%</span></div><p class="auto-status" id="auto-status" role="status">让产物参与下一轮生成，观察偏向如何改变。</p><div class="try-zero"><span aria-hidden="true">↗</span><p>试试 <button id="balanced-preset" type="button">0% 的完全平衡</button>：这个确定性模型会保持对称，不会凭空选边。</p></div></div></div>
+      <details class="model-details"><summary>为什么这个模型能放大偏向？</summary><p>初始有 20 份产物与 200 份底物。每一步消耗 10 份底物，按 A²∶B² 分配新增产物；已有产物保留，总物质量守恒。平方权重是人为设定的超线性反馈，用于演示“自催化 + 放大”，不拟合硖合反应的真实动力学。自催化本身不必然放大 ee；这里没有加入随机涨落，也不模拟具体反应条件。</p></details>
+    </section>
+    <section class="meaning-section"><div class="wrap meaning-grid"><div><p class="eyebrow">WHY IT MATTERS</p><h2>从分子的偏向，<br>到生命的提问。</h2><span class="meaning-symbol" aria-hidden="true">✳</span></div><div class="meaning-points"><article><span>01 / SYNTHESIS</span><h3>更有选择性的合成</h3><p>为获得高对映体纯度的化合物提供思路，帮助化学家设计手性药物及其他精细化学品的合成反应。</p></article><article><span>02 / ORIGINS</span><h3>探索生命为何“选边”</h3><p>生命分子为何偏爱某一种手性？这些发现提供了可研究的放大机制，但并不等于已证明早期地球采用了同一条反应路线。</p></article></div></div></section>
+    <section class="sources wrap section" aria-labelledby="sources-title"><div><p class="eyebrow">KEEP EXPLORING</p><h2 id="sources-title">发现背后的原始线索</h2><p>从授奖公告，到研究最初被写下的地方。</p></div><ol><li><a href="https://www.kva.se/en/news/the-nobel-prize-in-chemistry-2026/" target="_blank" rel="noopener noreferrer"><span><small>2026 · 瑞典皇家科学院</small>诺贝尔化学奖官方公告</span><span>↗</span></a></li><li><a href="https://doi.org/10.1021/ja00269a036" target="_blank" rel="noopener noreferrer"><span><small>1986 · Puchot et al. · JACS</small>不对称合成中的非线性效应</span><span>↗</span></a></li><li><a href="https://www.nature.com/articles/378767a0" target="_blank" rel="noopener noreferrer"><span><small>1995 · Soai et al. · Nature</small>不对称自催化与对映体过量放大</span><span>↗</span></a></li><li><a href="https://www.tus.ac.jp/about/nobelprize2026/index.html" target="_blank" rel="noopener noreferrer"><span><small>2026 · 东京理科大学</small>硖合宪三获奖纪念专题</span><span>↗</span></a></li></ol></section>
+  </main>
+  <footer class="wrap"><a class="brand" href="#"><span class="brand-symbol" aria-hidden="true">✳</span><span>一点不对称</span></a><p>一个关于 2026 诺贝尔化学奖的独立科普项目<br><span>非诺贝尔奖官方站点 · 互动为教学示意 · 资料核实于 2026.11.16</span></p><a href="https://github.com/Zcube7/nobel-chemistry-2026" target="_blank" rel="noopener noreferrer">查看开源项目 ↗</a></footer>
+  <noscript><p class="noscript">文字内容可直接阅读；交互实验需要启用 JavaScript。</p></noscript>
+</body>
+</html>
